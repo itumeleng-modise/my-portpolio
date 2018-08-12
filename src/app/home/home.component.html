@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+	<meta charset=UTF-8>
+	<title>Itumeleng Modise | Itu Web Dev</title>
+	<meta content="Junior Web developer based in Pretoria, more interested in Angular 5, Django, Bootstrap 4
+            HTML 5, Semantic UI and CSS3." name=description>
+	<meta content="itu web development" name=keywords>
+	<link href=../home.css rel=stylesheet>
+	<meta content="width=device-width,user-scalable=no" name=viewport>
+	<link href=favicon.ico rel="shortcut icon" type=image/x-icon>
+	<link href=favicon.ico rel=icon type=image/x-icon>
+</head>
+
+<body>
+	<header>
+		<!-- <div class="container"> -->
+			<nav class="menu">
+				<ul class="menu-nav">
+					<li class="nav-item">
+						<a href=#top class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a href=#projects class="nav-link">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a href=#contact class="nav-link">Contact</a>
+					</li>
+				</ul>
+				<div class="menu-btn">
+					<div class="btn-line"></div>
+					<div class="btn-line"></div>
+					<div class="btn-line"></div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="profile-info">
+					<img id="profile-pic" alt="profile pic" src="assets/img/itu.jpg">
+					<div class="info">
+						<div class="name">Itumeleng Modise</div>
+						<div class="title">JUNIOR DEVELOPER</div>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+	</header>
+	<main id="home">
+		<div id="row-hero">
+			<div class=container>
+				<div id="hero">
+					<h1 class="fadein-fast">Front-end Web Developer</h1>
+					<p class="fadein-fast">Based in Pretoria with 2 years of experince in web development. Passionate about learning cutting edge web technologies
+						and bringing things to life. If you want to explore with me get in touch
+						<a class="link" href=#contact>here</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="projects">
+			<div class="container">
+				<div class="row">
+					<div class="portfolio-item">
+						<div class="portfolio-col screenshot">
+							<img alt="Drought-App" src="assets/img/drought_app.png">
+						</div>
+						<div class="portfolio-col description-container">
+							<h3>
+								<a href="https://disman.afis.co.za/drought/" target=_blank>Drought Monitor</a>
+							</h3>
+							<p class=description>Historical drought visualisation using Standard Precipitation Index (SPI) 
+								and Percentage of Average Seasonal Greenness (PASG).</p>
+							<!-- <ul class=skills>
+								<li>Semantic UI</li>
+								<li>JavaScript</li>
+								<li>JQuery</li>
+								<li>Django</li>
+								<li>PostgreSQL Database</li>
+								<li>GeoServer</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+				<div class="separator"></div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="portfolio-item">
+						<div class="portfolio-col screenshot">
+							<img alt="Severe Weather" src="assets/img/weather_app.png">
+						</div>
+						<div class="portfolio-col description-container">
+							<h3>
+								<a href="https://disman.afis.co.za/weather/" target=_blank>Severe Weather</a>
+							</h3>
+							<p class="description">Visualising weather data by stations including clouds, precipitation, live and recent lightning strikes.
+							</p>
+							<!-- <ul class="skills">
+								<li>Semantic UI</li>
+								<li>JavaScript</li>
+								<li>JQuery</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+				<!-- <div class="separator"></div> -->
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<h3>Get In Touch</h3>
+				<!-- <div class="center span4">
+						<div id="contact-number">
+							+27 76 684 6462
+						</div>
+						<div id="social">
+							<a href="http://github.com/itumeleng-modise" target="_blank">
+								<img class="icon" alt="github icon" src="assets/img/github.png">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/itumeleng-modise-b9b92973/" target=_blank>
+								<img class="icon" alt="linkedin icon" src="assets/img/linkedin.png">
+							</a>
+							<a href="mailto:edison.modise@gmail.com">
+								<img class="icon" alt="main icon" src="assets/img/mail.png">
+							</a>
+						</div>
+					</div> -->
+				<div class=span8 id=contact>
+					<form action=mailer.php id=contact-form method=post name=contact-form>
+						<div class=buffer-bottom>
+							<input type=text name=name placeholder=Name required id=field1>
+							<input type=email name=email placeholder=Email required>
+							<input type=text name=phone placeholder=Phone required>
+						</div>
+						<div class=buffer-bottom>
+							<textarea class=message name=message placeholder=Message required rows=6></textarea>
+						</div>
+						<span id=submit-response></span>
+						<div class=pull-right>
+							<input type=submit class=button value=send>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<ul>
+				<li>
+					<a class="footer-link" href=#top>HOME</a>
+				</li>
+				<li>
+					<a class="footer-link" href=#projects>PROJECTS</a>
+				</li>
+				<li>
+					<a class="footer-link" href=#contact>CONTACT</a>
+				</li>
+			</ul>
+			<div id="copyright"> Copyright &copy; 2018 Itumeleng Modise</div>
+		</div>
+	</footer>
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="dist/scripts.min.js"></script>
+	<script src="https://buttons.github.io/buttons.js" async defer id=github-bjs></script>
+</body>
+
+</html>
